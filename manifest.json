@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "MahjongSoulles",
+  "version": "1.0",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "description": "Block Mahjong Soul wallpapers and character portraits.",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://mahjongsoul.game.yo-star.com/*"
+      ],
+      "js": [
+        "wallpaper-block.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "extendRes\\/charactor\\/.*\\/full\\.png",
+      "resourceTypes": [
+        "image",
+        "xmlhttprequest",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "myres2\\/treasure\\/default_.*\\/.*\\.png",
+      "resourceTypes": [
+        "image",
+        "xmlhttprequest",
+        "other"
+      ]
+    }
+  }
+]
