@@ -21,7 +21,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "myres2\\/treasure\\/default_.*\\/.*\\.png",
+      "regexFilter": "myres2\\/treasure\\/default_[0-9]+\\/illust_.*\\.png",
       "resourceTypes": [
         "image",
         "xmlhttprequest",
